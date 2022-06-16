@@ -1,6 +1,6 @@
 {
 	"name": "wp-local-media-proxy",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Proxy images on a local development WordPress site from a remote server.",
 	"main": "Gruntfile.js",
 	"repository": {

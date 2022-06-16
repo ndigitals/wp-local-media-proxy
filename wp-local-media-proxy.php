@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Local Development Media Library Proxy
  * Description: Provides the ability to proxy media library requests to a remote site for local development.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Tim Nolte
  * Author URI: https://www.ndigitals.com
  *
@@ -16,7 +16,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 // Check for remote media URL and add hooks to proxy media library images.
 // Example Configuration "DDEV_USE_REMOTE_MEDIA_URL=https://example.com".
-if ( defined( 'LOCALDEV_USE_REMOTE_MEDIA_URL' ) && ! empty( constant( LOCALDEV_USE_REMOTE_MEDIA_URL ) ) ) {
+if ( defined( 'LOCALDEV_USE_REMOTE_MEDIA_URL' ) && ! empty( constant( 'LOCALDEV_USE_REMOTE_MEDIA_URL' ) ) ) {
 	add_filter( 'wp_get_attachment_image_src', 'wplmp_filter_wp_get_attachment_image_src' );
 	add_filter( 'wp_calculate_image_srcset', 'wplmp_filter_wp_calculate_image_srcset' );
 	add_filter( 'wp_get_attachment_url', 'wplmp_filter_wp_get_attachment_url' );
