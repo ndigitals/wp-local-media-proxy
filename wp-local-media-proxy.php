@@ -2,6 +2,9 @@
 /**
  * Plugin Name: Local Development Media Library Proxy
  * Description: Provides the ability to proxy media library requests to a remote site for local development.
+ * Version: 1.0.1
+ * Author: Tim Nolte
+ * Author URI: https://www.ndigitals.com
  *
  * @package  Ndigitals_Wp_Local_Media_Proxy_MuPlugin
  */
