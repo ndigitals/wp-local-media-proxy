@@ -71,7 +71,7 @@
 		 Multiple valid text domains can be provided as a comma-delimited list. -->
   <rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="array" value="oidc-generic-button-text-addon" />
+			<property name="text_domain" type="array" value="wp-local-media-proxy" />
 		</properties>
   </rule>
 
