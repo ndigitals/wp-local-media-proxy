@@ -107,7 +107,7 @@ module.exports = function (grunt) {
 				options: {
 					prefix: "const VERSION = '"
 				},
-				src: ['<%= pkg.name %>.php']
+				src: ['<%= pkg.name %>.php', 'class-<%= pkg.name %>.php']
 			},
 			header: {
 				options: {
@@ -120,7 +120,14 @@ module.exports = function (grunt) {
 					prefix: 'Stable tag:\\s+'
 				},
 				src: ['readme.txt']
-			}
+			},
+			php: {
+				options: {
+					prefix: '@since\\s*',
+					replace: '0\.0\.0'
+				},
+				src: ['*.php']
+			},
 		}
 
 	});
